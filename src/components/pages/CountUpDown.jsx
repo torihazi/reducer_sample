@@ -50,7 +50,7 @@ const CountUpDown = () => {
           onClick={() => dispatch({ type: "reset" })}
         >
           reset
-        </Button>{" "}
+        </Button>
       </Stack>
     </Box>
   );
