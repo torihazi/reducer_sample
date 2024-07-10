@@ -5,4 +5,7 @@
 - useReducer (今回練習)
 
 # イメージ
-https://twitter.com/torihazi/status/1810935581331050979?s=61&t=MDup8kTDTHzyY0A69J_NdQ
+
+
+https://github.com/torihazi/reducer_sample/assets/71245205/3f97ee78-bd29-41c8-b226-00084198e478
+
