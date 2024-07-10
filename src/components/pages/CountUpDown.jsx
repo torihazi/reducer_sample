@@ -1,6 +1,6 @@
 // core
 import React, { useReducer } from "react";
-import { Box, Button, ButtonGroup, Typography } from "@mui/material";
+import { Box, Button, ButtonGroup, Stack, Typography } from "@mui/material";
 
 // hooks
 import { useManageCount } from "../../hooks/useManageCount";
@@ -15,7 +15,7 @@ const CountUpDown = () => {
       alignItems="center"
       height="calc(100vh - 64px)"
     >
-      <Box display="flex" flexDirection="column">
+      <Stack direction="column" spacing={3}>
         <Typography
           variant="h2"
           textAlign="center"
@@ -40,7 +40,18 @@ const CountUpDown = () => {
             -1
           </Button>
         </ButtonGroup>
-      </Box>
+        <Button
+          variant="contained"
+          sx={{
+            background: "grey",
+            color: "white",
+            ":hover": { background: "darkgrey" },
+          }}
+          onClick={() => dispatch({ type: "reset" })}
+        >
+          reset
+        </Button>{" "}
+      </Stack>
     </Box>
   );
 };
